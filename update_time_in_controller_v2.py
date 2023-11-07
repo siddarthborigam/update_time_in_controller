@@ -13,7 +13,7 @@ def update_time_in_controller():
 	while i < 1:
 		#cmd="show ap inventory aptest"
 		try:
-			net_connect = cisco_sshconnection('192.168.10.10', 22, 'theatro', 'theatro+1')
+			net_connect = cisco_sshconnection('ip_address', 22, 'user', 'password')
 		except NetMikoTimeoutException as e:
 			print("ssh timeout issue:", e)
 			#sys.exit()
